@@ -25,7 +25,21 @@ class Owner
     "I am a #{species}."
   end
 
-  def pets
+  def buy_fishes(name)
+    @pets[:fishes] << Fish.new(name)
+  end
+
+  def buy_cats(name)
+    @pets[:cats] << Cat.new(name)
+  end
+
+  def buy_cats(name)
+    @pets[:dogs] << Dog.new(name)
+  end
+
+  def walk_dogs
+    @pets[:dogs].each do |dog|
+    dog.mood = "happy"
   end
 
 end
