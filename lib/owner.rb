@@ -1,6 +1,6 @@
 class Owner
   @@all = []
-  attr_accessor :name, :pets
+  attr_accessor :name, :pets, :mood
   attr_reader :species
 
   def initialize(species)
@@ -29,11 +29,11 @@ class Owner
     @pets[:fishes] << Fish.new(name)
   end
 
-  def buy_cats(name)
+  def buy_cat(name)
     @pets[:cats] << Cat.new(name)
   end
 
-  def buy_cats(name)
+  def buy_dog(name)
     @pets[:dogs] << Dog.new(name)
   end
 
